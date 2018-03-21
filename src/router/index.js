@@ -49,12 +49,12 @@ export const constantRouterMap = [
     redirect: 'noredirect',
     name: 'Visual Map',
     meta: {
-      title: 'Visual Map',
+      title: 'visualmap',
       icon: 'international'
     },
     children: [
-      { path: 'map', component: _import('mapview/map'), name: 'ArcGISMap', meta: { title: 'ArcGIS Map', noCache: true }},
-      { path: 'scene', component: _import('mapview/scene'), name: 'ArcGISScene', meta: { title: 'ArcGIS Scene', noCache: true }}
+      { path: 'map', component: _import('mapview/map'), name: 'ArcGISMap', meta: { title: 'arcgismap', noCache: false }},
+      { path: 'scene', component: _import('mapview/scene'), name: 'ArcGISScene', meta: { title: 'arcgissence', noCache: false }}
     ]
   },
   {

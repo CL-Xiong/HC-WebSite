@@ -14,7 +14,7 @@ export default {
     },
     text: {
       type: String,
-      default: 'vue-element-admin'
+      default: '空气质量可视化系统'
     }
   }
 }

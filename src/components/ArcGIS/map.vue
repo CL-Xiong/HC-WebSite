@@ -8,23 +8,29 @@
 /* eslint-disable */
 import * as esriLoader from 'esri-loader'
 
-esriLoader.loadModules(['esri/views/MapView', 'esri/WebMap'])
-.then(([MapView, WebMap]) => {
-  // then we load a web map from an id
-  let webmap = new WebMap({
-    portalItem: {id: 'f2e9b762544945f390ca4ac3671cfa72'}
-    })
-    let view = new MapView({
-    map: webmap,
-    container: 'viewDiv'
-  });
-})
-.catch(err => {
-  // handle any errors
-  console.error(err);
-});
-
 export default {
+  mounted() {
+    this.initMap();
+  },
+  methods: {
+    initMap(){
+      esriLoader.loadModules(['esri/views/MapView', 'esri/WebMap'])
+      .then(([MapView, WebMap]) => {
+        // then we load a web map from an id
+        let webmap = new WebMap({
+          portalItem: {id: 'f2e9b762544945f390ca4ac3671cfa72'}
+          })
+        let view = new MapView({
+          map: webmap,
+          container: 'viewDiv'
+          });
+        })
+        .catch(err => {
+          // handle any errors
+          console.error(err);
+      });
+    }
+  }
 }
 </script>
 <style scoped>
