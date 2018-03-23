@@ -169,12 +169,21 @@ var itemStyle = {
 };
 
 var option = {
+     title: {
+        top: 30,
+        text: '武汉一个月每天的AQI及各污染物指数图',
+        left: 'center',
+        textStyle: {
+            color: '#fff'
+        }
+    },
     backgroundColor: '#404a59',
     color: [
         '#dd4444', '#fec42c', '#80F1BE'
     ],
     legend: {
-        y: 'top',
+        x:'80%',
+        y: '10%',
         data: ['武汉'],
         textStyle: {
             color: '#fff',
