@@ -157,7 +157,7 @@ var lineStyle = {
 var option = {
     backgroundColor: '#161627',
     title: {
-        text: 'AQI - 雷达图',
+        text: '多城市AQI - 雷达图',
         left: 'center',
         textStyle: {
             color: '#eee'

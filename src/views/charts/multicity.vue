@@ -5,9 +5,6 @@
         <linec id="line" height='100%' width='100%'></linec>
       </div>
       <div class="chart-wrapper">
-        <key id="key" height='100%' width='100%'></key>
-      </div>
-      <div class="chart-wrapper">
         <scatterColor id="scatterColor" height='100%' width='100%'></scatterColor>
       </div>
        <!-- <div class="chart-wrapper">
@@ -26,7 +23,7 @@
 <script>
 /* eslint-disable */
 import Linec from "@/components/Charts/lineMarker";
-import Key from "@/components/Charts/keyboard";
+//import Key from "@/components/Charts/keyboard";
 import scatterColor from "@/components/Charts/multiCity/scatterColor";
 // import scatterTime from "@/components/Charts/multiCity/scatterTime";
 import parallel from "@/components/Charts/multiCity/parallel";
@@ -34,7 +31,7 @@ import radarMulti from "@/components/Charts/multiCity/radarMulti";
 
 export default {
   name: "lineChart",
-  components: { Linec, Key,scatterColor,parallel,radarMulti }
+  components: { Linec, scatterColor,parallel,radarMulti }
 };
 </script>
 
