@@ -54,7 +54,7 @@ export default {
       this.chart.setOption({
         backgroundColor: '#344b58',
         title: {
-          text: 'statistics',
+          text: '武汉12个月天气质量合格天数与不合格天数及月平均AQI指数统计图',
           x: '20',
           top: '20',
           textStyle: {
@@ -88,7 +88,7 @@ export default {
           textStyle: {
             color: '#90979c'
           },
-          data: ['轻度污染/重度污染/重度污染天数', '优/良天数', '月AQI平均值']
+          data: ['轻度污染/中度污染/重度污染天数', '优/良天数', '月AQI平均值']
         },
         calculable: true,
         xAxis: [{
@@ -180,7 +180,7 @@ export default {
           end: 35
         }],
         series: [{
-          name: '轻度污染/重度污染/重度污染天数',
+          name: '轻度污染/中度污染/重度污染天数',
           type: 'bar',
           stack: 'total',
           barMaxWidth: 35,

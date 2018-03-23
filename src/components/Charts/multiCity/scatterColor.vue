@@ -169,12 +169,20 @@ var itemStyle = {
 };
 
 var option = {
+    title: {
+        top: 30,
+        text: '多城市一个月每天的AQI及各污染物指数图',
+        left: 'center',
+        textStyle: {
+            color: '#fff'
+        }
+    },
     backgroundColor: '#404a59',
     color: [
         '#dd4444', '#fec42c', '#80F1BE'
     ],
     legend: {
-        y: 'top',
+        y: '13%',
         data: ['北京', '上海', '广州'],
         textStyle: {
             color: '#fff',
