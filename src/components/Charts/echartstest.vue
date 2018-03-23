@@ -47,8 +47,7 @@ export default {
       this.chart = echarts.init(document.getElementById(this.id))
       var option = {
         title : {
-            text: '南丁格尔玫瑰图',
-            subtext: '纯属虚构',
+            text: '武汉2017年空气质量等级比例图',
             x:'center'
         },
         tooltip : {
@@ -58,7 +57,7 @@ export default {
         legend: {
             x : 'center',
             y : 'bottom',
-            data:['rose1','rose2','rose3','rose4','rose5','rose6','rose7','rose8']
+            data:['rose1','rose2','rose3','rose4','rose5',]
         },
         toolbox: {
             show : true,
@@ -98,14 +97,11 @@ export default {
                     }
                 },
                 data:[
-                    {value:10, name:'rose1'},
-                    {value:5, name:'rose2'},
-                    {value:15, name:'rose3'},
-                    {value:25, name:'rose4'},
-                    {value:20, name:'rose5'},
-                    {value:35, name:'rose6'},
-                    {value:30, name:'rose7'},
-                    {value:40, name:'rose8'}
+                    {value:75, name:'空气质量为优的天数：'},
+                    {value:180, name:'空气质量为良的天数：'},
+                    {value:30, name:'空气质量为轻度污染的天数：'},
+                    {value:45, name:'空气质量为中度污染的天数：'},
+                    {value:35, name:'空气质量为重度污染的天数：'}
                 ]
             },
             {
@@ -115,14 +111,11 @@ export default {
                 center : ['75%', '50%'],
                 roseType : 'area',
                 data:[
-                    {value:10, name:'rose1'},
-                    {value:5, name:'rose2'},
-                    {value:15, name:'rose3'},
-                    {value:25, name:'rose4'},
-                    {value:20, name:'rose5'},
-                    {value:35, name:'rose6'},
-                    {value:30, name:'rose7'},
-                    {value:40, name:'rose8'}
+                   {value:75, name:'空气质量为优的天数：'},
+                    {value:180, name:'空气质量为良的天数：'},
+                    {value:30, name:'空气质量为轻度污染的天数：'},
+                    {value:45, name:'空气质量为中度污染的天数：'},
+                    {value:35, name:'空气质量为重度污染的天数：'}
                 ]
             }
         ]

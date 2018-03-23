@@ -166,6 +166,14 @@ var lineStyle = {
 };
 
 var option = {
+     title: {
+        top: 3,
+        text: '多城市不同污染物数值和污染等级平行坐标图',
+        left: 'center',
+        textStyle: {
+            color: '#fff'
+        }
+    },
     backgroundColor: '#333',
     legend: {
         bottom: 30,

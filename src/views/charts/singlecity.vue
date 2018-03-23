@@ -12,7 +12,9 @@
     <div class="chart-wrapper">
       <scatterColor2 id="scatterColor2" height='100%' width='100%'></scatterColor2>
     </div>
-
+    <div class="chart-wrapper">
+      <echartstest id="test2" height='100%' width='100%'></echartstest>
+    </div>
   </div>
 </template>
 
@@ -23,10 +25,11 @@ import mixChart from '@/components/Charts/mixChart'
 import radar from '@/components/Charts/singleCity/radar'
 import calendar from '@/components/Charts/singleCity/calendar'
 import scatterColor2 from '@/components/Charts/singleCity/scatterColor2'
+import echartstest from '@/components/Charts/echartstest'
  
 export default { 
   name: 'keyboardChart', 
-  components: { mixChart,radar,calendar,scatterColor2 } 
+  components: { mixChart,radar,calendar,scatterColor2,echartstest } 
 } 
 </script> 
  
