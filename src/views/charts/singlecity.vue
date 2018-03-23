@@ -3,17 +3,17 @@
     <div class="chart-wrapper">
       <mixChart id="mixChart" height='100%' width='100%'></mixChart>
     </div>
-    <div class="chart-wrapper">
-      <radar id="radar" height='100%' width='100%'></radar>
-    </div>
      <div class="chart-wrapper">
       <calendar id="calendar" height='100%' width='100%'></calendar>
     </div>
     <div class="chart-wrapper">
-      <scatterColor2 id="scatterColor2" height='100%' width='100%'></scatterColor2>
+      <radar id="radar" height='100%' width='100%'></radar>
     </div>
     <div class="chart-wrapper">
       <echartstest id="test2" height='100%' width='100%'></echartstest>
+    </div>
+    <div class="chart-wrapper">
+      <scatterColor2 id="scatterColor2" height='100%' width='100%'></scatterColor2>
     </div>
   </div>
 </template>

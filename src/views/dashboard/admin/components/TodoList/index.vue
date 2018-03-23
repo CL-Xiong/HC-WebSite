@@ -32,6 +32,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import Todo from './Todo.vue'
 
 const STORAGE_KEY = 'todos'
@@ -41,14 +42,14 @@ const filters = {
   completed: todos => todos.filter(todo => todo.done)
 }
 const defalutList = [
-  { text: 'star this repository', done: false },
-  { text: 'fork this repository', done: false },
-  { text: 'follow author', done: false },
-  { text: 'vue-element-admin', done: true },
-  { text: 'vue', done: true },
-  { text: 'element-ui', done: true },
-  { text: 'axios', done: true },
-  { text: 'webpack', done: true }
+  { text: '前后端实现数据交互', done: false },
+  { text: '提供数据访问接口', done: false },
+  { text: '搭建Django后台服务', done: true },
+  { text: '打包App', done: true },
+  { text: '打包Electron客户端', done: true },
+  { text: '部署服务', done: true },
+  { text: '完成网页', done: true },
+  { text: '学习Webpack + Vue搭建前端', done: true }
 ]
 export default {
   components: { Todo },

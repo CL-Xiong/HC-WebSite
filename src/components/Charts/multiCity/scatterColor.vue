@@ -183,7 +183,7 @@ var option = {
     ],
     legend: {
         y: '13%',
-        data: ['北京', '上海', '广州'],
+        data: ['武汉', '上海', '广州'],
         textStyle: {
             color: '#fff',
             fontSize: 16
@@ -234,7 +234,7 @@ var option = {
     },
     yAxis: {
         type: 'value',
-        name: 'AQI指数',
+        name: 'AQI 指数',
         nameLocation: 'end',
         nameGap: 20,
         nameTextStyle: {
@@ -314,7 +314,7 @@ var option = {
     ],
     series: [
         {
-            name: '北京',
+            name: '武汉',
             type: 'scatter',
             itemStyle: itemStyle,
             data: dataBJ
