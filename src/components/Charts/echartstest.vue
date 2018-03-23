@@ -3,6 +3,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import echarts from 'echarts'
 import resize from './mixins/resize'
 
