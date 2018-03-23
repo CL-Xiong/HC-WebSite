@@ -3,6 +3,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import echarts from 'echarts'
 require('echarts/theme/macarons') // echarts theme
 import { debounce } from '@/utils'
@@ -74,8 +75,16 @@ export default {
   methods: {
     setOptions({ expectedData, actualData } = {}) {
       this.chart.setOption({
+        title: {
+            top: 0,
+            text: 'Contributions',
+            left: 'center',
+            textStyle: {
+                color: '#000'
+            }
+        },
         xAxis: {
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['3月17日', '3月18日', '3月19日', '3月20日', '3月21日', '3月2日', '3月23日'],
           boundaryGap: false,
           axisTick: {
             show: false
@@ -85,7 +94,7 @@ export default {
           left: 10,
           right: 10,
           bottom: 20,
-          top: 30,
+          top: 50,
           containLabel: true
         },
         tooltip: {
@@ -101,6 +110,8 @@ export default {
           }
         },
         legend: {
+          top: 20,
+          right: 30,
           data: ['expected', 'actual']
         },
         series: [{
@@ -113,7 +124,7 @@ export default {
               }
             }
           },
-          smooth: true,
+          smooth: false,
           type: 'line',
           data: expectedData,
           animationDuration: 2800,
@@ -121,7 +132,7 @@ export default {
         },
         {
           name: 'actual',
-          smooth: true,
+          smooth: false,
           type: 'line',
           itemStyle: {
             normal: {
