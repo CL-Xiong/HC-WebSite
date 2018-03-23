@@ -27,7 +27,7 @@ export default {
           "esri/layers/GraphicsLayer",
           "dojo/domReady!"
         ])
-        .then(([SceneView, WebMap, Graphic, GraphicsLayer]) => {
+        .then(([SceneView, Map, Graphic, GraphicsLayer]) => {
           var map = new Map({
             basemap: "hybrid"
           });

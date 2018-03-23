@@ -1,13 +1,25 @@
 <template>
-  <div class="main-container">
-    <ArcGISMap style="float:left;margin-left:100px;" title="Map"></ArcGISMap>
+  <div class="map-container">
+    <ArcGISSence></ArcGISSence>
   </div>
 </template>
 <script>
-import ArcGISMap from '@/components/ArcGIS/map'
+import ArcGISSence from '@/components/ArcGIS/scene'
 
 export default {
-  name: 'arcgisscene',
-  components: { ArcGISMap }
+  name: 'arcgismap',
+  components: { ArcGISSence }
 }
 </script>
+
+<style scoped>
+.map-container{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: 87.65vh;
+  background-color: #eee;
+  z-index:0;
+}
+</style>
+
