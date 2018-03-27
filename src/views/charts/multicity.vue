@@ -22,12 +22,12 @@
 
 <script>
 /* eslint-disable */
-// import Linec from "@/components/Charts/lineMarker";
-//import Key from "@/components/Charts/keyboard";
-import scatterColor from "@/components/Charts/multiCity/scatterColor";
-// import scatterTime from "@/components/Charts/multiCity/scatterTime";
-import parallel from "@/components/Charts/multiCity/parallel";
-import radarMulti from "@/components/Charts/multiCity/radarMulti"; 
+// import Linec from "@/components/Charts/lineMarker"
+//import Key from "@/components/Charts/keyboard"
+import scatterColor from "@/components/Charts/multiCity/scatterColor"
+// import scatterTime from "@/components/Charts/multiCity/scatterTime"
+import parallel from "@/components/Charts/multiCity/parallel"
+import radarMulti from "@/components/Charts/multiCity/radarMulti"
 
 export default {
   name: "lineChart",
